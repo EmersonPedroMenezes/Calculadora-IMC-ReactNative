@@ -9,7 +9,7 @@ export default function Form(){
     const[MSGCalc, SETCalcMSG] = useState(null) // Mensagem de calculo
     const[MSGResult, SETResultMSG] = useState(null) // Mensagem de Resultado
     const[IMC, SETImc] = useState(null) // IMC
-    const[textButton, setTextButton] = useState("Resultado!") // IMC  
+    const[textButton, setTextButton] = useState("Calcular") // IMC  
 
     /*Formúla do calculo IMC weight / height * height (Peso / Altura * Altura)*/
 
@@ -23,17 +23,17 @@ export default function Form(){
 
     function ResultCalc(IMC){
         if(IMC < 18.5){
-            SETResultMSG("Abaixo do peso!")
+            SETResultMSG("Abaixo do peso")
         }else if (IMC >= 18.5 && IMC < 24.9){
-            SETResultMSG("Peso normal!")
-        }else if (IMC >= 25 && IMC < 29.9){
-            SETResultMSG("Sobrepeso!")
-        }else if(IMC >= 30 && IMC < 34.9){
-            SETResultMSG("Obesidade - Grau 1!")
-        }else if(IMC >= 35 && IMC < 39.9){
-            SETResultMSG("Obesidade Severa - Grau 2!")
+            SETResultMSG("Peso normal")
+        }else if (IMC >= 24.9 && IMC < 29.9){
+            SETResultMSG("Sobrepeso")
+        }else if(IMC >= 29.9 && IMC < 34.9){
+            SETResultMSG("Obesidade - Grau 1")
+        }else if(IMC >= 34.9 && IMC < 39.9){
+            SETResultMSG("Obesidade Severa - Grau 2")
         }else{
-            SETResultMSG("Obesidade Mórbida - Grau 3!")
+            SETResultMSG("Obesidade Mórbida - Grau 3")
         }
     }
 
@@ -48,17 +48,23 @@ export default function Form(){
                 ResultIMC(formatWeight, formatHeight)
                 weightset(null)
                 heightset(null)
-                SETCalcMSG(null)
-                setTextButton("Calcular novamente!")
+                SETCalcMSG(null)    
+                setTextButton("Calcular novamente")
             }else{
-                SETCalcMSG("Valor inválido!")
+                SETCalcMSG("Valor inválido")
                 weightset(null)
                 heightset(null)
-                setTextButton("Calcular!")
+                setTextButton("Calcular")
+                setTimeout(() => {
+                    SETCalcMSG(null)
+                }, 4000)
             }
         }else{
-            SETCalcMSG("Preencha os campos!")
+            SETCalcMSG("Preencha os campos")
             SETImc(null)
+            setTimeout(() => {
+                SETCalcMSG(null)
+            }, 4000)
         }
     }
 

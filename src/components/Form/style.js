@@ -2,11 +2,10 @@ import {StyleSheet} from "react-native";
 
 const styles = StyleSheet.create({
     form: {
-        backgroundColor: '#fff',
-        padding: 30,
-        height: '100%',
-        borderTopLeftRadius: 20,
-        borderTopRightRadius: 20,
+        
+        backgroundColor: '#929292',
+        padding: 100,
+        height: '80%',
     },
     alerta: {
         backgroundColor: "#f00",
@@ -23,6 +22,8 @@ const styles = StyleSheet.create({
         marginBottom: 10,
     },
     input: {
+                height: 60,
+        width: 320,
         fontSize: 20,
         borderRadius: 10,
         backgroundColor: '#ddd',
@@ -31,9 +32,9 @@ const styles = StyleSheet.create({
     },
     buttom: {
         fontSize: 20,
-        color: '#fff',
+        color: '#000000',
         textAlign: 'center',
-        backgroundColor: '#f90',
+        backgroundColor: '#7ED957',
         padding: 10,
         borderRadius: 10,
         marginBottom: 20,

@@ -12,6 +12,9 @@ const styles = StyleSheet.create({
     },
 
     IMC: {
+        height: 60,
+        width: 320,
+        marginBottom: 30,
         backgroundColor: '#DDD',
         fontSize: 30,
         textAlign: 'center',
@@ -19,6 +22,9 @@ const styles = StyleSheet.create({
         padding: 10,
         borderTopLeftRadius: 10,
         borderTopRightRadius: 10,
+        borderBottomLeftRadius: 10,
+        borderBottomRightRadius: 10,
+        
     },
 
     MSGResult: {
@@ -26,6 +32,8 @@ const styles = StyleSheet.create({
         color: '#fff',
         textAlign: 'center',
         padding: 10,
+        borderTopLeftRadius: 10,
+        borderTopRightRadius: 10,
         borderBottomLeftRadius: 10,
         borderBottomRightRadius: 10,
     },
@@ -44,6 +52,7 @@ const styles = StyleSheet.create({
 
     corObesidadeGrau1: {
         backgroundColor: '#ff8c00',
+        
     },
 
     corObesidadeGrau2: {

@@ -21,6 +21,7 @@ export default function Result(props) {
         <View style={styles.MSGImc}>
             <Text style={styles.Info}>Resultado:</Text>
             <Text style={styles.IMC}>{props.IMC}</Text>
+            <Text style={styles.Info}>Classificação:</Text>
             <Text style={[styles.MSGResult, cor]}>{props.MSGResult}</Text>
         </View>
     );
