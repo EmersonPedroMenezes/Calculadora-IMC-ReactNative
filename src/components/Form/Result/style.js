@@ -20,11 +20,7 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         fontWeight: 'bold',
         padding: 10,
-        borderTopLeftRadius: 10,
-        borderTopRightRadius: 10,
-        borderBottomLeftRadius: 10,
-        borderBottomRightRadius: 10,
-        
+        borderRadius: 10,
     },
 
     MSGResult: {
@@ -32,35 +28,37 @@ const styles = StyleSheet.create({
         color: '#fff',
         textAlign: 'center',
         padding: 10,
-        borderTopLeftRadius: 10,
-        borderTopRightRadius: 10,
-        borderBottomLeftRadius: 10,
-        borderBottomRightRadius: 10,
+        borderRadius: 10,
     },
 
     corPesoBaixo: {
-        backgroundColor: '#ffff00',
+        backgroundColor: '#FFFF00',
     },
 
     corPesoNormal: {
-        backgroundColor: '#228b22',
+        color: '#000000',
+        backgroundColor: '#00AF50',
     },
 
     corSobrePeso: {
-        backgroundColor: '#ffa07a', 
+        color: '#000000',
+        backgroundColor: '#F9BF8F', 
     },
 
     corObesidadeGrau1: {
-        backgroundColor: '#ff8c00',
+        color: '#000000',
+        backgroundColor: '#FF9B09',
         
     },
 
     corObesidadeGrau2: {
-        backgroundColor: '#FF4500',
+        color: '#000000',
+        backgroundColor: '#FF3737',
     },
 
     corObesidadeGrau3: {
-        backgroundColor: '#ff0000',
+        color: '#000000',
+        backgroundColor: '#FE0000',
     },
 });
 
