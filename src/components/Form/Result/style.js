@@ -7,7 +7,7 @@ const styles = StyleSheet.create({
 
     Info: {
         textAlign: 'center',
-        fontSize: 10,
+        fontSize: 20,
         marginBottom: 10,
     },
 

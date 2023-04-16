@@ -8,7 +8,7 @@ export default function Result(props) {
     } else if (props.IMC >= 18.5 && props.IMC < 24.9) {
         cor = styles.corPesoNormal
     } else if (props.IMC >= 25 && props.IMC < 29.9) {
-        cor = styles.corSobrepeso
+        cor = styles.corSobrePeso
     } else if (props.IMC >= 30 && props.IMC < 34.9) {
         cor = styles.corObesidadeGrau1
     } else if (props.IMC >= 35 && props.IMC < 39.9) {
@@ -18,8 +18,8 @@ export default function Result(props) {
     }
 
     return(
-        <View style={styles.ResultImc}>
-            <Text style={styles.Info}>Classificação:</Text>
+        <View style={styles.MSGImc}>
+            <Text style={styles.Info}>Resultado:</Text>
             <Text style={styles.IMC}>{props.IMC}</Text>
             <Text style={[styles.MSGResult, cor]}>{props.MSGResult}</Text>
         </View>

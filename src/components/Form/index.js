@@ -63,7 +63,7 @@ export default function Form(){
     }
 
     return (
-        <View style={styles.Form}>
+        <View style={styles.form}>
             {IMC == null ?
                 <View>
                     {/* Condição que verifica se há mensagem de erro */}
