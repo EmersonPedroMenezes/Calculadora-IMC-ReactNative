@@ -1,13 +1,13 @@
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
-    containerLogo: {
+    boxLogo: {
         marginBottom: 40,
         alignItems: "center",
     },
     logo: {
-        width: 260,
-        height: 100,
+        width: 300,
+        height: 200,
     },
 });
 
