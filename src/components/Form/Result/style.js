@@ -32,31 +32,37 @@ const styles = StyleSheet.create({
     },
 
     corPesoBaixo: {
+        fontWeight: 'bold',
         backgroundColor: '#FFFF00',
     },
 
     corPesoNormal: {
+        fontWeight: 'bold',
         color: '#000000',
         backgroundColor: '#00AF50',
     },
 
     corSobrePeso: {
+        fontWeight: 'bold',
         color: '#000000',
         backgroundColor: '#F9BF8F', 
     },
 
     corObesidadeGrau1: {
+        fontWeight: 'bold',
         color: '#000000',
         backgroundColor: '#FF9B09',
         
     },
 
     corObesidadeGrau2: {
+        fontWeight: 'bold',
         color: '#000000',
         backgroundColor: '#FF3737',
     },
 
     corObesidadeGrau3: {
+        fontWeight: 'bold',
         color: '#000000',
         backgroundColor: '#FE0000',
     },

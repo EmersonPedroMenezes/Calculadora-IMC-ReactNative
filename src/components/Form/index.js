@@ -20,17 +20,38 @@ export default function Form(){
     }
 
     /*Função para identificar onde se enquadra o peso do usuário*/
+    
+    /* o calculo abaixo está desta forma pois se fosse digitado a altura de 1.90 e o peso de 90kg o código coloca o resuldado de 24.93 em 
+    obesidade mórbida grau 3, porém segundo as regras da OMS o resultado de 24.93 é considerado um peso normal. Então o código não consegue enquadrar
+    O e mesmo como peso normal. No formato abaixo que acontece o erro
 
-    function ResultCalc(IMC){
+        function ResultCalc(IMC){
         if(IMC < 18.5){
             SETResultMSG("Abaixo do peso")
         }else if (IMC >= 18.5 && IMC < 24.9){
             SETResultMSG("Peso normal")
-        }else if (IMC >= 24.9 && IMC < 29.9){
+        }else if (IMC >= 25 && IMC < 29.9){
             SETResultMSG("Sobrepeso")
-        }else if(IMC >= 29.9 && IMC < 34.9){
+        }else if(IMC >= 30 && IMC < 34.9){
             SETResultMSG("Obesidade - Grau 1")
-        }else if(IMC >= 34.9 && IMC < 39.9){
+        }else if(IMC >= 35 && IMC < 39.9){
+            SETResultMSG("Obesidade Severa - Grau 2")
+        }else{
+            SETResultMSG("Obesidade Mórbida - Grau 3")
+        }
+    }
+    */
+
+    function ResultCalc(IMC){
+        if(IMC < 18.5){
+            SETResultMSG("Abaixo do peso")
+        }else if (IMC >= 18.5 && IMC < 25){
+            SETResultMSG("Peso normal")
+        }else if (IMC >= 25 && IMC < 30){
+            SETResultMSG("Sobrepeso")
+        }else if(IMC >= 30 && IMC < 35){
+            SETResultMSG("Obesidade - Grau 1")
+        }else if(IMC >= 35 && IMC < 40){
             SETResultMSG("Obesidade Severa - Grau 2")
         }else{
             SETResultMSG("Obesidade Mórbida - Grau 3")
@@ -57,14 +78,14 @@ export default function Form(){
                 setTextButton("Calcular")
                 setTimeout(() => {
                     SETCalcMSG(null)
-                }, 4000)
+                }, 3000)
             }
         }else{
             SETCalcMSG("Preencha os campos")
             SETImc(null)
             setTimeout(() => {
                 SETCalcMSG(null)
-            }, 4000)
+            }, 3000)
         }
     }
 
